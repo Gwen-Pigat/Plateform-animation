@@ -1,0 +1,48 @@
+body{
+    background-image: url("../images/background_images_84.jpg");;
+    text-shadow: 0 0 15px #0dcd4c
+}
+
+@font-face{
+    font-family: "stink";
+    src: url("../fonts/Stink.ttf");
+}
+
+@font-face{
+    font-family : "London";
+    src : url('../fonts/OldLondon.ttf');
+}
+
+center h1{
+    text-shadow: 0 0 15px #0dcd4c;
+    color: #0dcd4c;
+    font-size: 180px;
+    font-family: "stink";
+    margin-bottom: -4%;
+    margin-top: -5%;
+}
+
+center h2{
+    text-shadow: 0 0 15px #0dcd4c;
+    color: #0dcd4c;
+    font-size: 20px;
+    margin-bottom: 8%;
+    font-size: 25px;
+}
+
+label{
+    color: black;
+    text-shadow: 0 0 15px #0dcd4c;
+}
+
+#username, #password{
+    padding: 0.3%;
+    color: black;
+    border-radius: 5px;
+    text-shadow: 0 0 15px #0dcd4c;
+}
+
+div{
+    color: #EFEFCE;
+    text-shadow: 0 0 10px black;
+}

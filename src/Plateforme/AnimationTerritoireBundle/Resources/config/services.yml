@@ -1,0 +1,4 @@
+services:
+#    plateforme_animation_territoire.example:
+#        class: Plateforme\AnimationTerritoireBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

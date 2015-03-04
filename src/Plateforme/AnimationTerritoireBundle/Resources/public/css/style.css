@@ -1,0 +1,41 @@
+html{
+    background-color: #EFEFCE;
+    color: #24334C;
+    word-break: break-all;
+}
+
+tr td{
+    border: 3px #24334C solid;
+    padding: 10px;
+    margin-left: 10px
+}
+
+th{
+    width: 10%;
+    padding: 10px
+}
+
+.records_list thead tr{
+    padding: 25%;
+    margin: 25%;
+}
+
+.active, .sr-only{
+    color: red
+}
+
+
+.navbar-inverse{
+    background-color: #b84f0a;
+    color: #EFEFCE
+}
+
+.navbar-inverse a{
+    color: #EFEFCE
+}
+
+.active{
+    background-color: #EFEFCEC;
+    color: #24334C
+}
+

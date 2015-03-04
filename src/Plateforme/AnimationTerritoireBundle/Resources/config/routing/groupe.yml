@@ -1,0 +1,30 @@
+groupe:
+    path:     /
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:index" }
+
+groupe_show:
+    path:     /{id}/show
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:show" }
+
+groupe_new:
+    path:     /new
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:new" }
+
+groupe_create:
+    path:     /create
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:create" }
+    requirements: { _method: post }
+
+groupe_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:edit" }
+
+groupe_update:
+    path:     /{id}/update
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:update" }
+    requirements: { _method: post|put }
+
+groupe_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:delete" }
+    requirements: { _method: post|delete }
