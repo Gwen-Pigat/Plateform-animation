@@ -1,4 +1,4 @@
-Plateforme Anumation du territoire (AnimationTerritory)
+Plateforme Animation du territoire (AnimationTerritory)
 =======================================================
 
 Projet mis en place par Gwen, Sam et Olivier.
@@ -7,7 +7,7 @@ Projet mis en place par Gwen, Sam et Olivier.
 What's inside?
 --------------
 
-Bah; pas grand chose pour le moment. :)
+Bah; pas grand chose pour le moment. :D
 
 Sur une note plus serieuse; le Bundle à été crée avec son entity, le CRUD également.
 Le FOSUserBundle est installé (bien que quelques modifs de routing seront à preconisées).
@@ -24,7 +24,7 @@ Un nouveau compte :
 http://localhost/PlateformeAnimation/web/app_dev.php/register
 
 
-Acuellement; le compte existant est le suivant :
+Actuellement; le compte existant est le suivant :
 
 Username : PixOFHeaven
 Password : pixofheaven
