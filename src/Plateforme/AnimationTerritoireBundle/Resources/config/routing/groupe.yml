@@ -10,6 +10,10 @@ groupe_new:
     path:     /new
     defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:new" }
 
+groupe_accueil:
+    path:     /accueil
+    defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:accueil" }
+
 groupe_create:
     path:     /create
     defaults: { _controller: "PlateformeAnimationTerritoireBundle:Groupe:create" }
