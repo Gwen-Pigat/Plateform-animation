@@ -39,3 +39,26 @@ th{
     color: #24334C
 }
 
+.chat{
+    float: right;
+    height: 350px;
+    background-color: red;
+    width: 10%;
+    margin-top: 10%;
+    display: none
+}
+
+.chatIMG{
+    width: 5%;
+    float: right;
+    margin-top: 10%
+}
+
+
+.chat p{
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    padding: 1%
+}
+
