@@ -47,7 +47,7 @@
 				
 				var boxText 			= document.createElement("div");
 				boxText.style.cssText 	= "border: 1px solid black; margin-top: 8px; background: #000; padding: 5px; color: #fff";
-				boxText.innerHTML 		= "Salut ! <br /> C'est gwen qu'à configuré ca ; il pèse, non ??";
+				boxText.innerHTML 		= "Salut ! <br /> C'est moi qu'à configuré ca ; il pèse, non ??";
 
 				 var myInfoOptions = {
 						 content: boxText,

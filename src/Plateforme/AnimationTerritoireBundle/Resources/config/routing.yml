@@ -2,3 +2,5 @@ plateforme_animation_territoire_groupe:
     resource: "@PlateformeAnimationTerritoireBundle/Resources/config/routing/groupe.yml"
     prefix:   /groupe
 
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
