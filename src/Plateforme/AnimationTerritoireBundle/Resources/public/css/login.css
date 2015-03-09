@@ -1,48 +1,54 @@
 body{
-    background-image: url("../images/background_images_84.jpg");;
-    text-shadow: 0 0 15px #0dcd4c
+    padding: 0;
+    margin: 0;
+    background: url('../images/paysage.jpg') center fixed no-repeat;
 }
 
-@font-face{
-    font-family: "stink";
-    src: url("../fonts/Stink.ttf");
+h1{
+    float: left;
+    padding: 0;
+    margin: 0;
+    color: #EFEFCE;
 }
 
-@font-face{
-    font-family : "London";
-    src : url('../fonts/OldLondon.ttf');
+form{
+    float:right;
+    margin-right: 30%;
+    margin-top: 1%
 }
 
-center h1{
-    text-shadow: 0 0 15px #0dcd4c;
-    color: #0dcd4c;
-    font-size: 180px;
-    font-family: "stink";
-    margin-bottom: -4%;
-    margin-top: -5%;
+form input {
+    padding: 1%;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 1%
 }
 
-center h2{
-    text-shadow: 0 0 15px #0dcd4c;
-    color: #0dcd4c;
-    font-size: 20px;
-    margin-bottom: 8%;
-    font-size: 25px;
+.envoyer{
+    margin-right: -30%;
+
 }
 
 label{
-    color: black;
-    text-shadow: 0 0 15px #0dcd4c;
+    color: #EFEFCE
 }
 
-#username, #password{
-    padding: 0.3%;
-    color: black;
+.contour{
+    background-color: #24334C;
+    z-index: 3;
+    height: 75px;
     border-radius: 5px;
-    text-shadow: 0 0 15px #0dcd4c;
+    border: 5px #0088CC solid;
 }
 
-div{
-    color: #EFEFCE;
-    text-shadow: 0 0 10px black;
+p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 1px white;
+
 }
+
+p{
+    text-align: center;
+}
+

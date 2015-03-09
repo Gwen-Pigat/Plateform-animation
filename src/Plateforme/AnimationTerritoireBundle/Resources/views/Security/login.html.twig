@@ -2,24 +2,42 @@
 
 {% trans_default_domain 'FOSUserBundle' %}
 
+
+
+
 {% block fos_user_content %}
+    <link rel="stylesheet" href="{{ asset('bundles/plateformeanimationterritoire/css/login.css') }}"/>
 {% if error %}
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
+<div class="contour">
+    <h1>Animation <br/>Territoire</h1>
+
+    <form action="{{ path("fos_user_security_check") }}" method="post">
     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
-
+    <label for="fos_user_registration_form_email" class="required">Adresse e-mail :</label>
+    <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required" />
+    <br/>
     <label for="password">{{ 'security.login.password'|trans }}</label>
     <input type="password" id="password" name="_password" required="required" />
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
     <a href="{{ path('groupe') }}">
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+    <input class="envoyer" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
     </a>
 </form>
+
+</div>
+
+    <br/><br/>
+<center>
+    <p>La plateforme d'animation du territoire, qu'est-ce que c'est ?</p>
+    <br/>
+    <p>Si vous souhaitez vous inscrire, contacter nous au 0666666666 ou par mail à animation@territoire.fr</p>
+    <br/>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145180.03802166737!2d1.0261060000000093!3d48.47328888841503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f93cc28e5b%3A0x6ed6fb7657b76f29!2s28240+La+Loupe!5e1!3m2!1sfr!2sfr!4v1425913257249"
+            width="600" height="450" frameborder="0" style="border:3px black solid"></iframe>
+
+</center>
 {% endblock fos_user_content %}
