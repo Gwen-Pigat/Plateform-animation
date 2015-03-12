@@ -11,9 +11,12 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-<div class="contour">
-    <h1>Animation <br/>Territoire</h1>
 
+    <span>
+    <h1>Animation Territoire</h1>
+    </span>
+        <br/>
+    <div class="contour">
     <form action="{{ path("fos_user_security_check") }}" method="post">
     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
@@ -23,9 +26,8 @@
     <label for="password">{{ 'security.login.password'|trans }}</label>
     <input type="password" id="password" name="_password" required="required" />
 
-    <a href="{{ path('groupe') }}">
     <input class="envoyer" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-    </a>
+
 </form>
 
 </div>
@@ -36,8 +38,7 @@
     <br/>
     <p>Si vous souhaitez vous inscrire, contacter nous au 0666666666 ou par mail à animation@territoire.fr</p>
     <br/>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145180.03802166737!2d1.0261060000000093!3d48.47328888841503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f93cc28e5b%3A0x6ed6fb7657b76f29!2s28240+La+Loupe!5e1!3m2!1sfr!2sfr!4v1425913257249"
-            width="600" height="450" frameborder="0" style="border:3px black solid"></iframe>
 
+    <img src="{{ asset('society.jpg') }}" alt="society"/>
 </center>
 {% endblock fos_user_content %}
