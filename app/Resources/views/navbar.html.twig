@@ -1,7 +1,10 @@
 <span><h1>Plateforme Animation</h1></span>
 <br/>
 <center>
-    <button>Accueil <br/><img src="{{ asset('ico-a.png') }}" alt="society"/></button>
-    <button>Groupe de documents <br/><img src="{{ asset('ico-b.png') }}" alt="society"/></button>
-    <button>Parametres <br/><img src="{{ asset('ico-c.png') }}" alt="society"/></button>
+    <a href="{{ path('fos_user_security_logout') }}">
+    <button>Accueil <br/><img src="{{ asset('ico-a.png') }}" alt="society"/></button></a>
+    <a href="{{ path('fos_user_security_logout') }}">
+    <button>Groupe de documents <br/><img src="{{ asset('ico-b.png') }}" alt="society"/></button></a>
+        <a href="{{ path('fos_user_security_logout') }}">
+    <button>Parametres <br/><img src="{{ asset('ico-c.png') }}" alt="society"/></button></a>
 </center>
