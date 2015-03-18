@@ -7,6 +7,4 @@ $(document).ready(function(){
         $("iframe").toggle(1000);
         $(".chat-open").toggle(1000);
     });
-
-
 });
