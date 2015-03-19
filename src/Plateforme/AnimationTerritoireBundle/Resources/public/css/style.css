@@ -11,6 +11,10 @@ body{
     text-shadow: 0 0 1px black;
 }
 
+img{
+    height: auto;
+}
+
 span h1{
     margin-left: 2%;
     margin-right: 0;

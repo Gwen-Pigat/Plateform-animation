@@ -16,22 +16,24 @@
     </span>
         <br/>
     <div class="contour">
-    <form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-    <label for="fos_user_registration_form_email" class="required">Adresse e-mail :</label>
-    <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required" />
-    <br/>
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" />
+        <form action="{{ path("fos_user_security_check") }}" method="post">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-    <input class="envoyer" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+            <label for="username">{{ 'security.login.username'|trans }}</label><br/>
+            <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" /><br/>
 
-</form>
+            <label for="password">{{ 'security.login.password'|trans }}</label><br/>
+            <input type="password" id="password" name="_password" required="required" /><br/>
+
+            <input type="submit" class="btn btn-success" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+            <br/><br/><br/>
+
+        </form>
 
 </div>
 
-    <br/><br/>
+    <br/><br/><br/>
 <center>
     <p>La plateforme d'animation du territoire, qu'est-ce que c'est ?</p>
     <br/>

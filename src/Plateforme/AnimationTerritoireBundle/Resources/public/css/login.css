@@ -54,7 +54,7 @@ label{
 .contour{
     background-color: #24334C;
     z-index: 3;
-    height: 75px;
+    height: 85px;
     border-radius: 5px;
     border: 1px #000000 solid;
 }

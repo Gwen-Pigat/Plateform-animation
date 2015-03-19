@@ -1,4 +1,3 @@
-# src/Acme/UserBundle/Resources/config/doctrine/User.orm.yml
 Plateforme\AnimationTerritoireBundle\Entity\User:
     type:  entity
     table: fos_user
