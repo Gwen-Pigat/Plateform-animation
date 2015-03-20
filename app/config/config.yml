@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: @PlateformeAnimationTerritoireBundle/Resources/config/admin.yml }
 
 framework:
     #esi:             ~
@@ -53,6 +54,7 @@ doctrine:
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8
+
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
@@ -72,7 +74,30 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+#FOS User
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: Plateforme\AnimationTerritoireBundle\Entity\User
+
+# Knp Menu Configuration
+knp_menu:
+    twig:
+        template: knp_menu.html.twig
+    templating: false
+    default_renderer: twig
+
+
+# Sonata Configuration
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.user.block.menu:    # used to display the menu in profile pages
+        sonata.user.block.account: # used to display menu option (login option)
+        sonata.block.service.text: # used to if you plan to use sonata user routes
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+
+sonata_admin:
+    title:      My Site Bundle
+    #title_logo: bundles/acmedemo/img/fancy_acme_logo.png
