@@ -6,13 +6,14 @@
 body{
     padding: 0;
     margin: 0;
-    background: url('../images/background.jpg');
-    color: white;
-    text-shadow: 0 0 1px black;
+    background: url('../images/gallery1.jpg') center no-repeat;
+    z-index: 1;
+    overflow: hidden;
 }
 
 img{
     height: auto;
+    z-index: 2
 }
 
 span h1{
@@ -26,29 +27,35 @@ span h1{
     text-shadow: 0 0 1px black;
 }
 
-center button{
+.custom button{
     opacity: 1;
     margin-left: 0.5%;
     margin-right: 0.5%;
     padding: 1%;
     border-radius: 5px;
     border: 1px black solid;
-    height: 150px;
+    height: auto;
     background-color: #204d74;
     font-size: 30px;
     color: white;
     text-shadow: 0 0 1px white;
     font-family: "test";
+    z-index: 2
 }
 
-center button:hover{
+.custom button:hover{
     transition: 0.4s;
-    color: #2d92fa;
+    color: black;
     text-shadow: 0 0 1px black;
     background: url('../images/background.jpg') fixed no-repeat center right;
 }
 
-center{
+.custom .deco{
+    margin-left: 30%;
+    height: auto;
+}
+
+.custom{
     background-color: #96a4fc;
     padding: 1%
 }

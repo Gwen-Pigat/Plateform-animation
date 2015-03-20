@@ -5,19 +5,17 @@
 html{
     padding: 0;
     margin: 0;
-    background: url('../images/background.jpg') center no-repeat;
-    color: white;
-    text-shadow: 0 0 1px black;
+    background: url('../images/gallery1.jpg') center no-repeat;
+    z-index: 3;
+    overflow: hidden
 }
 
 span h1{
-    margin-left: 2%;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: -10px;
+    margin: auto;
+    text-align: center;
     color: #EFEFCE;
     font-family: "test";
-    font-size: 65px;
+    font-size: 105px;
     text-shadow: 0 0 1px black;
 }
 
@@ -30,40 +28,19 @@ center img{
 
 
 form{
-    float:right;
-    margin-right: 30%;
-    margin-top: 1%
-}
-
-form input {
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    color: black;
+    text-shadow: 0 0 1px black;
     padding: 1%;
-    border-radius: 5px;
-    border: 0px;
-    margin-top: 1%
-}
-
-.envoyer{
-    margin-right: -30%;
-
-}
-
-label{
-    color: #EFEFCE
-}
-
-.contour{
-    background-color: #24334C;
-    z-index: 3;
-    height: 85px;
-    border-radius: 5px;
-    border: 1px #000000 solid;
+    height: auto;
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     color: black;
-    text-shadow: 0 0 1px white;
-
+    text-shadow: 0 0 1px black;
 }
 
 p{

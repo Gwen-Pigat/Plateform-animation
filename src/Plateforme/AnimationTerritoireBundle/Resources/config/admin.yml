@@ -1,0 +1,12 @@
+# Acme/DemoBundle/Resources/config/admin.yml
+services:
+    sonata.admin.post:
+        class: Plateforme\AnimationTerritoireBundle\Admin\PostAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Post" }
+        arguments:
+            - ~
+            - Plateforme\AnimationTerritoireBundle\Entity\Groupe
+            - ~
+        calls:
+            - [ setTranslationDomain, [PlateformeAnimationTerritoireBundle]]
