@@ -1,0 +1,15 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/plateformeanimationterritoire/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/plateformeanimationterritoire/css/bootstrap.min.css') }}"/>
+{% endblock %}
+    {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('bundles/plateformeanimationterritoire/js/jquery-1.11.2.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/plateformeanimationterritoire/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/plateformeanimationterritoire/js/chat.js') }}"></script>
+    {% endblock %}
+
+<div>
+    {% block fos_user_content %}
+
+    {% endblock fos_user_content %}
+</div>
