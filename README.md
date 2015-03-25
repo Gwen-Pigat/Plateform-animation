@@ -4,32 +4,30 @@ Plateforme Animation du territoire (AnimationTerritory)
 Projet mis en place par Gwen, Sam et Olivier.
 
 
-What's inside?
---------------
+Ce qui est disponible
+----------------------
 
-Bah; pas grand chose pour le moment. :D
-
-Sur une note plus serieuse; le Bundle à été crée avec son entity, le CRUD également.
-Le FOSUserBundle est installé (bien que quelques modifs de routing seront à preconisées).
-
-Ah oui, je me suis également permis de donner un premier apercu d'une barre de navigation sur le projet.
-
-L'entité est la suivante : "Groupe" ; son adresse sera donc :
-http://localhost/PlateformeAnimation/web/app_dev.php/groupe/
-
-Le login :
-http://localhost/PlateformeAnimation/web/app_dev.php/login
-
-Un nouveau compte :
-http://localhost/PlateformeAnimation/web/app_dev.php/register
+Le bundle + 2 entités (groupe + user) + le CRUD.
 
 
-Actuellement; le compte existant est le suivant :
+La page login comportant les deux champs demandés (mot de passe oublié est FAKE pour le moment);
 
-Username : PixOFHeaven
-Password : pixofheaven
+On est rédirigé si on essaie d'acceder en Racine, la gestion utilisateur est valide.
 
 
-Voila, pensé a bien committé si vous souhaitez modifié ce projet ;)
+Le coté Admin est également accessible sur la route "/admin"
+
+
+L'ajout de "User" et "Content" est valide.
+
+
+
+Compte dispo :
+
+Username : Admin
+Password : admin
+
+
+Voila, pensé à bien committé si vous souhaitez modifié ce projet ;)
 
 
