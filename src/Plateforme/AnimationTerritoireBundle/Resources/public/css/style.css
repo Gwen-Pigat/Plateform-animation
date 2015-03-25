@@ -11,9 +11,8 @@ body{
     overflow: hidden;
 }
 
-img{
-    height: auto;
-    z-index: 2
+h3{
+    float: right;
 }
 
 div h1{
@@ -25,6 +24,20 @@ div h1{
     font-family: "test";
     font-size: 65px;
     text-shadow: 0 0 1px black;
+}
+
+.login-titre{
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1px white;
+    margin-top: 2%;
+    margin-bottom: 5%
+}
+
+img{
+    height: auto;
+    z-index: 2
 }
 
 .custom button{
@@ -58,10 +71,6 @@ div h1{
 .custom{
     background-color: #96a4fc;
     padding: 1%
-}
-
-h3{
-    float: right;
 }
 
 .chat-open , .map-open{
